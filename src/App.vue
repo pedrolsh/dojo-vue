@@ -1,25 +1,23 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
+    <h3>Bem vindo ao Dojo de Vue</h3>
+    <h1 style="text-align: left">Lista de tarefas</h1>
+    <div class="wrapper"></div>
   </header>
 
-  <main>
-    <TheWelcome />
-  </main>
+  <main></main>
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -39,7 +37,10 @@ header {
   }
 
   header .wrapper {
+    height: 100%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     place-items: flex-start;
     flex-wrap: wrap;
   }
